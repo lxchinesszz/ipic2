@@ -1,0 +1,86 @@
+{
+  "name": "ipic2",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ipic2打包描述",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build --win --mac",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "pack": "electron-builder --dir --mac --arm64 "
+  },
+  "main": "background.js",
+  "author": {
+    "name": "liuxin"
+  },
+  "dependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@element-plus/icons-vue": "^2.0.6",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "core-js": "^3.8.3",
+    "electron-devtools-installer": "^3.1.0",
+    "electron-notification-state": "^1.0.4",
+    "electron-store": "^8.0.2",
+    "element-plus": "^2.2.8",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "js-md5": "^0.7.3",
+    "node-qiniu": "^6.2.0",
+    "qiniu": "^7.7.0",
+    "sqlite3": "^5.0.8",
+    "vue": "^3.2.13",
+    "vue-cli-plugin-electron-builder": "~2.1.1",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "@vue/eslint-config-standard": "^6.1.0",
+    "electron": "^18.0.3",
+    "electron-builder": "^23.1.0",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-cli-plugin-electron-builder": "~2.1.1",
+    "sqlite3": "^5.0.8"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "@vue/standard"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
